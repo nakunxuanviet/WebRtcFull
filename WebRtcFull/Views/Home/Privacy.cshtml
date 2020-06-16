@@ -3,4 +3,20 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="row">
+	<div class="col-md-6">
+		<textarea id="sendBox" style="width: 100%" rows="5"></textarea>
+	</div>
+	<div class="col-md-6">
+		<textarea id="receiveBox" style="width: 100%" cols="5" rows="5"></textarea>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<button id="startButton" class="btn btn-info" type="button">Start</button>
+		<button id="sendButton" class="btn btn-info" type="button">Send</button>
+		<button id="closeButton" class="btn btn-info" type="button">Close</button>
+	</div>
+</div>
+
+<script src="~/js/data.js" asp-append-version="true"></script>
