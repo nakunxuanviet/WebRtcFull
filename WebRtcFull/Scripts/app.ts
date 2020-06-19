@@ -23,13 +23,15 @@
 		.withUrl('/signalrtc')
 		.build()
 
+	connection.on('announce', function (user, message) {
+		console.log(user, message)
+	})
+
 	await connection.start()
 	connection.invoke('ready', 'phu', 'phu say hello')
 
 
-	connection.on('announce', function (user, message) {
-		console.log(user, message)
-	})
+	
 
 
 
